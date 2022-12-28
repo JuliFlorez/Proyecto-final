@@ -1,8 +1,8 @@
 <?php
-    $db = mysqli_connect("localhost","root","","contactos");
+    $db = mysqli_connect("localhost","root","","registro");
 
     if (isset($_POST['boton'])) {
-        if(strlen($_POST['Nombre']) >= 1 && strlen($_POST['Email']) >= 1) {
+        if(strlen($_POST['Nombre']) >= 1 && strlen($_POST['Apellido']) >= 1) {
             $Nombre = trim($_POST['Nombre']);
             $Apellido = trim($_POST['Apellido']);
             $Usuario = trim($_POST['Usuario']);
